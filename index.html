@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Évasion relaxante au cœur de la Géorgie, USA </title>
+    <link rel="icon" type="image/png" href="https://api.mytripplanner.fr/api/files/pbc_1321337024/47976eld0rscwbc/favicon_ytvg76obie.svg?thumb=100x100&token="/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+          theme: {
+              extend: {
+                  colors: {
+                      template: {
+                          sable: '#FFEDD5', 
+                          ocre: '#F97316',   // Orange Vibrant (Brand Accent)
+                          roche: '#0F172A',  // Bleu Nuit (Brand Dark)
+                          ciel: '#0D9488',   // Vert Lagon (Brand Primary)
+                          bg: '#FFF7ED'      // C'est un blanc cassé chaud, parfait pour la lecture et le contraste.
+                      }
+                  },
+                  fontFamily: {
+                      sans: ['"Plus Jakarta Sans"', 'sans-serif'], // Nouvelle police corps
+                      serif: ['"Outfit"', 'sans-serif'],           // Nouvelle police titres
+                  }
+              }
+          }
+      }
+    </script>
+    <style>
+        body { overflow-x: hidden; }
+        
+        /* 2. FORÇAGE DES GRAISSES (Comme sur la Landing Page) */
+        .font-sans { font-weight: 600 !important; }
+        .font-serif { font-weight: 800 !important; }
+
+        /* Ligne verticale de la timeline */
+        .timeline-line {
+            position: absolute;
+            left: 24px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #E5E7EB;
+            z-index: 0;
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line { left: 50%; margin-left: -1px; }
+        }
+
+        /* Style des cartes Info */
+        .tip-card {
+            border-left: 4px solid #F97316; /* ocre */
+            background-color: #FFF7ED;
+        }
+
+        /* Masquer la scrollbar de la nav mobile tout en gardant le scroll */
+        .hide-scroll::-webkit-scrollbar { display: none; }
+        .hide-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-template-bg text-template-roche antialiased">
+    
+    <nav id="nav-desktop" class="hidden md:flex fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b border-gray-200 py-4 px-8 justify-between items-center shadow-sm transition-transform duration-300 -translate-y-full">
+        <a href="#top" class="text-xl font-serif font-bold tracking-widest text-template-roche">MyTrip<span class="text-template-ocre">Planner</span></a>
+        <div class="space-x-6 text-sm font-bold text-gray-600">
+            <a href="#jour-1" class="nav-item-desktop hover:text-template-ocre transition">Le Parcours</a>
+            <a href="#pratique" class="nav-item-desktop hover:text-template-ocre transition">Infos Pratiques</a>
+        </div>
+    </nav>
+
+    <nav id="nav-mobile" class="md:hidden fixed top-0 w-full z-50 bg-white/95 backdrop-blur border-b border-gray-200 py-3 pl-4 overflow-x-auto hide-scroll whitespace-nowrap shadow-md transition-transform duration-300 -translate-y-full">
+        <div class="flex space-x-2 pr-4" id="mobile-menu-container">
+            <a href="#top" class="inline-block px-3 py-1 bg-template-roche text-white rounded-full text-xs font-bold shadow-sm">Top</a>
+            
+                <a href="#jour-1" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J1 Arrivée à Atlanta et première immersion</a>
+            
+                <a href="#jour-2" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J2 Nature urbaine et saveurs locales</a>
+            
+                <a href="#jour-3" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J3 Histoire rafraîchissante et détente olympique</a>
+            
+                <a href="#jour-4" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J4 Cap sur les montagnes de Blue Ridge</a>
+            
+                <a href="#jour-5" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J5 Saveurs locales et détente montagnarde</a>
+            
+                <a href="#jour-6" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J6 Cascades majestueuses et vignobles paisibles</a>
+            
+                <a href="#jour-7" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J7 Voyage vers la côte et charme du Sud</a>
+            
+                <a href="#jour-8" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J8 Savannah historique et riveraine</a>
+            
+                <a href="#jour-9" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J9 Art, histoire et sérénité</a>
+            
+                <a href="#jour-10" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J10 Évasion balnéaire à Tybee Island</a>
+            
+                <a href="#jour-11" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J11 Nature marine et ambiance insulaire</a>
+            
+                <a href="#jour-12" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J12 Retour vers Atlanta et soirée libre</a>
+            
+                <a href="#jour-13" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J13 Derniers plaisirs et souvenirs d'Atlanta</a>
+            
+                <a href="#jour-14" class="mobile-link inline-block px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-bold hover:bg-template-sable transition-all duration-300">J14 Départ d'Atlanta</a>
+            
+            <a href="#pratique" class="mobile-link inline-block px-3 py-1 border border-gray-300 text-gray-500 rounded-full text-xs font-bold">Infos</a>
+        </div>
+    </nav>
+
+    <header id="top" class="relative h-[60vh] flex items-center justify-center bg-cover bg-center"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/header.png" || 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021'}');">
+        
+        <div class="relative z-20 text-center text-white px-4 max-w-3xl animate-fade-in-up">
+            <p class="font-sans text-template-sable tracking-[0.2em] mb-4 uppercase text-xs font-bold">Feuille de Route</p>
+            <h1 class="font-serif text-5xl md:text-8xl mb-6 leading-tight drop-shadow-lg">GEORGIE</h1>
+            <p class="font-sans text-lg md:text-xl text-gray-100 mb-10 font-medium max-w-2xl mx-auto leading-relaxed">Évasion relaxante au cœur de la Géorgie, USA</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold mb-10">
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🗓️ 14 jours</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">💰 Environ 3100 - 3300 €/personne</span>
+                <span class="bg-white/20 backdrop-blur-md px-5 py-2 rounded-full border border-white/30 shadow-sm">🛬 3h00 depuis Lefebvre, Canada</span>
+            </div>
+        </div>
+    </header>
+
+    <section id="itineraire" class="max-w-6xl mx-auto px-4 py-16 relative">
+        <div class="text-center mb-16">
+            <h2 class="text-template-ocre font-bold tracking-normal text-4xl mt-2 uppercase font-serif">Votre Roadtrip</h2>
+        </div>
+
+        <div class="relative">
+            <div class="timeline-line"></div>
+            
+                <div id="jour-1" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 1</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Arrivée à Atlanta et première immersion</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Atterrissage en douceur à Atlanta, prise en charge de votre véhicule et installation. Profitez d'une soirée décontractée pour vous imprégner de l'ambiance de la ville.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛬</strong>: Arrivée à l'aéroport international Hartsfield-Jackson (ATL) et récupération de votre voiture de location.</li><li><strong>🛏️</strong>: Installation à votre hôtel dans le quartier de Midtown ou Buckhead.</li><li><strong>🍽️</strong>: Dîner relaxant dans un restaurant local pour goûter aux saveurs du Sud.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour1.jpg" class="w-full h-64 object-cover" alt="Jour 1">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚗 Location de voiture</p>
+                                <p class="text-gray-700">Indispensable pour explorer la Géorgie. Réservez à l'avance pour de meilleurs tarifs et un plus grand choix de véhicules.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-2" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 2</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nature urbaine et saveurs locales</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez les poumons verts d'Atlanta et flânez dans un marché vibrant, avant de savourer une cuisine authentique dans un cadre historique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🌳</strong>: Promenade paisible au Piedmont Park, le "Central Park" d'Atlanta, avec ses vues sur les gratte-ciel.</li><li><strong>🌸</strong>: Visite des Atlanta Botanical Garden, un havre de paix luxuriant en plein cœur de la ville.</li><li><strong>🛍️</strong>: Exploration du Ponce City Market, un ancien bâtiment Sears transformé en marché gastronomique et commercial.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour2.jpg" class="w-full h-64 object-cover" alt="Jour 2">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🚶‍♀️ Conseil</p>
+                                <p class="text-gray-700">Prévoyez des chaussures confortables pour les longues balades dans les parcs et les marchés.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-3" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 3</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Histoire rafraîchissante et détente olympique</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Plongez dans l'histoire d'une boisson emblématique et détendez-vous dans un parc commémoratif, avant de profiter d'une soirée gourmande.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🥤</strong>: Visite du World of Coca-Cola, une expérience interactive et ludique sur l'histoire de la célèbre boisson.</li><li><strong>🏅</strong>: Détente au Centennial Olympic Park, construit pour les Jeux Olympiques de 1996, avec ses fontaines rafraîchissantes.</li><li><strong>🍽️</strong>: Dîner dans le quartier branché d'Inman Park, réputé pour ses restaurants innovants.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour3.jpg" class="w-full h-64 object-cover" alt="Jour 3">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">💡 Le saviez-vous ?</p>
+                                <p class="text-gray-700">Atlanta est le berceau de Coca-Cola, inventé en 1886 par le pharmacien John Pemberton.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-4" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 4</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Cap sur les montagnes de Blue Ridge</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Quittez l'effervescence d'Atlanta pour les paysages apaisants des Appalaches. Installez-vous dans un cadre naturel et profitez d'une première balade au bord de l'eau.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Route panoramique vers Blue Ridge (environ 1h30-2h), au cœur des montagnes de Géorgie.</li><li><strong>🏡</strong>: Installation dans un chalet ou un hôtel confortable, pour une immersion totale dans la nature.</li><li><strong>🚶‍♂️</strong>: Balade douce le long des rives du lac Blue Ridge, idéal pour se ressourcer.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour4.jpg" class="w-full h-64 object-cover" alt="Jour 4">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🏞️ Paysages</p>
+                                <p class="text-gray-700">Les montagnes de Géorgie offrent des vues spectaculaires et une nature préservée, parfaite pour la détente.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-5" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 5</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Saveurs locales et détente montagnarde</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez les produits du terroir dans une ferme emblématique et laissez-vous tenter par une après-midi de pure relaxation au cœur des Appalaches.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🍎</strong>: Visite de Mercier Orchards, une ferme familiale proposant des produits locaux, des pâtisseries et des dégustations.</li><li><strong>💆‍♀️</strong>: Après-midi libre pour la détente: lecture, balade légère ou pourquoi pas un soin dans un spa local (à réserver à l'avance).</li><li><strong>🔥</strong>: Soirée cocooning au chalet, peut-être autour d'un feu de camp si l'hébergement le permet.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour5.jpg" class="w-full h-64 object-cover" alt="Jour 5">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🧖‍♀️ Bien-être</p>
+                                <p class="text-gray-700">Plusieurs établissements dans la région de Blue Ridge proposent des services de spa et de massage pour une relaxation profonde.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-6" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 6</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Cascades majestueuses et vignobles paisibles</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Admirez la puissance de la nature avec une cascade impressionnante, puis explorez une charmante ville historique avant de savourer les vins locaux.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>💧</strong>: Exploration d'Amicalola Falls State Park, avec ses sentiers doux et ses plateformes d'observation offrant des vues imprenables sur la cascade.</li><li><strong>⛏️</strong>: Visite de Dahlonega, une ville historique de la ruée vers l'or, avec ses boutiques et son ambiance pittoresque.</li><li><strong>🍷</strong>: Dégustation de vins dans un vignoble des North Georgia Wine Country, pour une fin de journée relaxante.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour6.jpg" class="w-full h-64 object-cover" alt="Jour 6">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🍇 Vignobles</p>
+                                <p class="text-gray-700">La région de Dahlonega est réputée pour ses vignobles primés, offrant des dégustations dans un cadre magnifique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-7" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 7</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Voyage vers la côte et charme du Sud</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Embarquez pour un long trajet vers la côte atlantique. Après l'installation, laissez-vous séduire par la beauté intemporelle de Forsyth Park à Savannah.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Longue route vers Savannah (environ 4-5h), l'une des plus belles villes du Sud.</li><li><strong>🛏️</strong>: Installation dans votre hôtel, idéalement situé dans le quartier historique.</li><li><strong>🌳</strong>: Première balade relaxante au Forsyth Park, avec sa célèbre fontaine et ses chênes moussus.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour7.jpg" class="w-full h-64 object-cover" alt="Jour 7">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🕰️ Ambiance</p>
+                                <p class="text-gray-700">Savannah est réputée pour son architecture antebellum, ses places ombragées et son atmosphère envoûtante.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-8" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 8</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Savannah historique et riveraine</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Explorez les places emblématiques et l'architecture coloniale de Savannah lors d'une visite guidée douce, puis flânez le long de la rivière pour une immersion complète.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚶‍♀️</strong>: Visite guidée à pied du quartier historique de Savannah, pour découvrir ses places, ses maisons coloniales et son histoire.</li><li><strong>🚢</strong>: Promenade le long de River Street, avec ses boutiques, ses galeries et ses vues sur les bateaux qui passent.</li><li><strong>👻</strong>: Soirée "Ghost Tour" (visite des fantômes), une manière ludique et non sportive de découvrir les légendes de la ville.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour8.jpg" class="w-full h-64 object-cover" alt="Jour 8">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">📚 Culture</p>
+                                <p class="text-gray-700">Savannah est souvent citée comme l'une des villes les plus hantées des États-Unis, d'où la popularité des visites sur le thème des fantômes.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-9" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 9</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Art, histoire et sérénité</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Découvrez l'art et l'architecture de Savannah à travers ses musées, puis trouvez la paix dans un cimetière historique d'une beauté saisissante.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🖼️</strong>: Visite du Telfair Museums (Jepson Center for the Arts ou Owens-Thomas House & Slave Quarters), pour un aperçu de l'art et de l'histoire locale.</li><li><strong>🌳</strong>: Promenade méditative au Bonaventure Cemetery, célèbre pour ses sculptures, ses chênes moussus et son ambiance paisible.</li><li><strong>🍽️</strong>: Dîner de fruits de mer frais dans un restaurant réputé de Savannah.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour9.jpg" class="w-full h-64 object-cover" alt="Jour 9">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎬 Anecdote</p>
+                                <p class="text-gray-700">Le Bonaventure Cemetery est devenu mondialement célèbre grâce au livre "Minuit dans le jardin du bien et du mal" et son adaptation cinématographique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-10" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 10</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Évasion balnéaire à Tybee Island</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Quittez l'agitation de la ville pour les plages de sable fin de Tybee Island. Profitez d'une journée de farniente et d'une visite emblématique.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Courte route vers Tybee Island (environ 30 min), l'île-plage de Savannah.</li><li><strong>🏖️</strong>: Détente sur la plage, baignade ou simplement profiter du soleil et de l'air marin.</li><li><strong>灯</strong>: Visite du Tybee Island Light Station and Museum, le plus ancien et le plus haut phare de Géorgie.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour10.jpg" class="w-full h-64 object-cover" alt="Jour 10">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">☀️ Plage</p>
+                                <p class="text-gray-700">Tybee Island est une destination idéale pour se détendre et profiter de l'océan Atlantique.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-11" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 11</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Nature marine et ambiance insulaire</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Commencez la journée par une rencontre avec la faune marine lors d'une croisière douce, puis explorez les charmes de l'île à votre rythme.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🐬</strong>: Croisière d'observation des dauphins (optionnel, très relaxant) pour admirer ces mammifères marins dans leur habitat naturel.</li><li><strong>🚶‍♀️</strong>: Balade sur les plages de l'île, à la recherche de coquillages ou simplement pour profiter du calme.</li><li><strong>🍦</strong>: Dégustation de glaces artisanales et exploration des petites boutiques de l'île.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour11.jpg" class="w-full h-64 object-cover" alt="Jour 11">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🌊 Activité</p>
+                                <p class="text-gray-700">Les croisières dauphins sont une activité douce et agréable, offrant de belles vues sur la côte et la faune marine.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-12" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ciel rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 12</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Retour vers Atlanta et soirée libre</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Reprenez la route vers Atlanta après ces jours de détente côtière. Profitez d'une soirée libre pour vous reposer ou explorer un quartier que vous n'avez pas encore visité.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Retour vers Atlanta (environ 4-5h de route).</li><li><strong>🛏️</strong>: Installation dans un hôtel proche de l'aéroport ou dans un quartier central.</li><li><strong>🍽️</strong>: Dîner libre et soirée de repos pour recharger les batteries avant le départ.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour12.jpg" class="w-full h-64 object-cover" alt="Jour 12">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⛽ Conseil</p>
+                                <p class="text-gray-700">Faites le plein d'essence avant de rendre la voiture de location pour éviter des frais supplémentaires.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-13" class="section-etape relative z-10 mb-20 md:flex md:flex-row-reverse md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-roche rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-left md:pl-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 13</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Derniers plaisirs et souvenirs d'Atlanta</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">Profitez de cette dernière journée pour quelques emplettes, une dernière balade ou la visite d'un lieu manqué, avant un dîner d'adieu mémorable.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🛍️</strong>: Matinée shopping dans un centre commercial ou dans les boutiques d'un quartier comme Virginia-Highland.</li><li><strong>🚶‍♂️</strong>: Visite du Martin Luther King Jr. National Historical Park, pour un moment de réflexion et d'histoire.</li><li><strong>🍽️</strong>: Dîner d'adieu dans un restaurant gastronomique ou avec une vue panoramique sur la ville.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pr-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour13.jpg" class="w-full h-64 object-cover" alt="Jour 13">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">🎁 Souvenirs</p>
+                                <p class="text-gray-700">N'oubliez pas d'acheter quelques souvenirs de la Géorgie, comme des produits à la pêche ou des articles sur Coca-Cola.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                <div id="jour-14" class="section-etape relative z-10 mb-20 md:flex  md:justify-between items-start group scroll-mt-32">
+                    <div class="absolute left-6 md:left-1/2 transform -translate-x-1/2 w-8 h-8 bg-template-ocre rounded-full border-4 border-white shadow-lg flex items-center justify-center z-20"></div>
+                    
+                    <div class="md:w-[45%] pl-14 md:text-right md:pr-12">
+                        <span class="font-serif text-3xl block text-template-roche mb-2 font-bold">Jour 14</span>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Départ d'Atlanta</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed italic mb-4">C'est le moment de dire au revoir à la Géorgie. Retour à l'aéroport, restitution du véhicule et vol retour vers le Canada, la tête pleine de souvenirs.</p>
+                        <ul class="text-sm text-gray-700 space-y-2 inline-block text-left font-medium">
+                            <li><strong>🚗</strong>: Restitution de votre voiture de location à l'aéroport.</li><li><strong>🛫</strong>: Enregistrement et vol retour depuis l'aéroport international Hartsfield-Jackson (ATL).</li><li><strong>👋</strong>: Départ de la Géorgie, USA.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pl-14 md:w-[45%] mt-6 md:mt-0 md:pl-12">
+                        <div class="rounded-xl overflow-hidden shadow-lg mb-4">
+                            <img src="https://raw.githubusercontent.com/mytripplanner-dotfr/Georgie-avm2zvtu79p6i7u/main/jour14.jpg" class="w-full h-64 object-cover" alt="Jour 14">
+                        </div>
+                        
+                            <div class="tip-card p-4 rounded-r-lg text-sm mb-2">
+                                <p class="font-bold text-template-ocre mb-1">⏰ Conseil</p>
+                                <p class="text-gray-700">Prévoyez suffisamment de temps pour le retour de la voiture et les formalités à l'aéroport, surtout en période de pointe.</p>
+                            </div>
+                        
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+
+    <section id="pratique" class="bg-white border-t border-gray-200 pt-12 pb-12 scroll-mt-24">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>💴</span> Budget
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🛬 Budget vol: </strong>A partir de 420 €/pers</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🚗 Budget transports: </strong>Environ 400 €/pers (location voiture + essence)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🥗 Budget repas: </strong>Environ 780 €/pers (50-70€/jour)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🛏️ Budget logement: </strong>Environ 1150 €/pers (150-200€/nuit pour 2)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🎭 Budget activités: </strong>Environ 390 €/pers (20-40€/jour)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>☀️</span> Périodes Idéales
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Printemps (Avril-Mai)</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">Automne (Septembre-Octobre)</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Infos pratiques
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">☀️ En mai, les températures en Géorgie varient entre 15 et 28°C. Prévoir des vêtements légers mais aussi une petite laine pour les soirées climatisées.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💳 La monnaie est le dollar américain (USD). Les cartes de crédit sont largement acceptées. Prévoir un peu de liquide pour les petits commerces ou pourboires.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">🚗 Le permis de conduire canadien est généralement suffisant pour la location de voiture. La conduite se fait à droite, et les distances sont en miles (1 mile = 1.6 km).</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">📶 Une carte SIM locale (AT&T, Verizon, T-Mobile) ou une eSIM est recommandée pour la navigation GPS et la communication. Le Wi-Fi est disponible dans la plupart des hébergements.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2">💲 Les pourboires sont une pratique courante et attendue aux États-Unis (15-20% dans les restaurants, pour les chauffeurs, etc.).</p>
+                
+            </div>            
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Anecdotes
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>💡 Le saviez-vous ?:</strong> La Géorgie est surnommée le "Peach State" (l'État de la Pêche) bien qu'elle ne soit pas le premier producteur de pêches aux États-Unis. Ce surnom est plus lié à la qualité de ses fruits et à son image de marque.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🙃 Insolite:</strong> Atlanta est la seule ville au monde à avoir accueilli les Jeux Olympiques et à avoir été entièrement détruite par le feu (lors de la Guerre de Sécession). Elle a su renaître de ses cendres, d'où son emblème, le phénix.</p>
+                
+            </div>
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>📃</span> Spécialités culinaires
+                </h4>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🍴 Shrimp and Grits:</strong> Un plat réconfortant du Sud, composé de crevettes sautées servies sur un lit de grits crémeux (une sorte de bouillie de maïs).</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🍗 Fried Chicken (Poulet Frit):</strong> Le poulet frit du Sud est une institution: morceaux de poulet marinés, panés et frits à la perfection, croustillants à l'extérieur et juteux à l'intérieur.</p>
+                
+                    <p class="text-sm text-gray-600 leading-relaxed mb-2"><strong>🍰 Peach Cobbler:</strong> Un dessert emblématique de la Géorgie, fait de pêches fraîches cuites avec une pâte croustillante et souvent servi chaud avec une boule de glace à la vanille.</p>
+                
+            </div>            
+            <div>
+                <h4 class="font-serif text-xl mb-4 text-template-roche flex items-center gap-2 font-bold">
+                    <span>🔗</span> Liens Utiles
+                </h4>
+                <ul class="text-sm space-y-3">
+                  <li><a href="https://mytripplanner-dotfr.github.io/Georgie-avm2zvtu79p6i7u/map.html" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🗺️ Carte Interactive</strong></a></li>
+                    
+                        <li><a href="https://www.kayak.fr/flights/YUL-ATL/2026-05-15/2026-05-28" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🛬 Réserve ton vol</strong></a></li>
+                    
+                        <li><a href="https://www.exploregeorgia.org/" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>📘 Tourisme Géorgie (USA)</strong></a></li>
+                    
+                        <li><a href="https://www.kayak.fr/location-voiture" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🚗 Kayak Location Voiture</strong></a></li>
+                    
+                        <li><a href="https://weather.com/weather/today/l/USGA0028:1:US" target="_blank" class="hover:text-template-ocre transition flex items-center gap-2"><strong>🌤️ Météo Géorgie (USA)</strong></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-50 border-t border-slate-200 py-6">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="font-serif text-lg text-template-roche mb-2 font-bold">
+                MyTrip<span class="text-template-ocre">Planner</span>
+            </p>
+
+                <div class="flex justify-center gap-4 text-[10px] md:text-xs text-slate-500 mb-4 font-semibold">
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Mentions Légales</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">CGU</a>
+                    <a href="#" class="hover:text-brand-primary transition hover:underline">Confidentialité</a>
+                </div>
+
+            <p class="text-[10px] text-gray-400 mb-2">
+                &copy; 2025 MyTripPlanner. Tous droits réservés.
+            </p>
+
+            <div class="flex justify-center">
+                <p class="text-[10px] text-gray-400 uppercase tracking-widest px-2 py-0.5 border border-gray-200 rounded-full inline-block">
+                    🤖 Contenu généré par IA
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gestion Scroll & Menu
+        const navDesktop = document.getElementById('nav-desktop');
+        const navMobile = document.getElementById('nav-mobile');
+        
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                navDesktop.classList.remove('-translate-y-full');
+                navMobile.classList.remove('-translate-y-full');
+            } else {
+                navDesktop.classList.add('-translate-y-full');
+                navMobile.classList.add('-translate-y-full');
+            }
+        });
+        
+        // Active Link Highlighter
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const activeId = entry.target.id;
+                    document.querySelectorAll('.mobile-link').forEach(link => {
+                        const linkHref = link.getAttribute('href').substring(1);
+                        if (linkHref === activeId) {
+                            link.classList.remove('bg-gray-100', 'text-gray-700');
+                            link.classList.add('bg-template-ocre', 'text-white', 'shadow-md');
+                            link.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+                        } else {
+                            link.classList.add('bg-gray-100', 'text-gray-700');
+                            link.classList.remove('bg-template-ocre', 'text-white', 'shadow-md');
+                        }
+                    });
+                }
+            });
+        }, { rootMargin: '-40% 0px -60% 0px' });
+
+        document.querySelectorAll('div[id^="jour-"], section#pratique').forEach(s => observer.observe(s));
+    </script>
+</body>
+</html>
