@@ -1,0 +1,493 @@
+{
+  "pays": "Géorgie, États-Unis",
+  "drapeau": "🇺🇸",
+  "symbole": "🍑",
+  "titre": "Évasion relaxante au cœur de la Géorgie, USA",
+  "budget_total": "Environ 3100 - 3300 €/personne",
+  "duree": "14 jours",
+  "temps_vol": "3h00 depuis Lefebvre, Canada",
+  "escale": "0",
+  "jours": [
+    {
+      "jour": 1,
+      "symbole": "🛬",
+      "titre": "Arrivée à Atlanta et première immersion",
+      "legende": "Atterrissage en douceur à Atlanta, prise en charge de votre véhicule et installation. Profitez d'une soirée décontractée pour vous imprégner de l'ambiance de la ville.",
+      "lieu": "Atlanta",
+      "activites": [
+        "<strong>🛬</strong>: Arrivée à l'aéroport international Hartsfield-Jackson (ATL) et récupération de votre voiture de location.",
+        "<strong>🛏️</strong>: Installation à votre hôtel dans le quartier de Midtown ou Buckhead.",
+        "<strong>🍽️</strong>: Dîner relaxant dans un restaurant local pour goûter aux saveurs du Sud."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Aéroport Hartsfield-Jackson, Atlanta",
+          "categorie": "Aéroport",
+          "coords": { "lat": 33.6407, "lng": -84.4277 }
+        }
+      ],
+      "illustration": "atlanta_arrival.jpg",
+      "encarts": [
+        {
+          "symbole": "🚗",
+          "titre": "Location de voiture",
+          "texte": "Indispensable pour explorer la Géorgie. Réservez à l'avance pour de meilleurs tarifs et un plus grand choix de véhicules."
+        }
+      ]
+    },
+    {
+      "jour": 2,
+      "symbole": "🌳",
+      "titre": "Nature urbaine et saveurs locales",
+      "legende": "Découvrez les poumons verts d'Atlanta et flânez dans un marché vibrant, avant de savourer une cuisine authentique dans un cadre historique.",
+      "lieu": "Atlanta",
+      "activites": [
+        "<strong>🌳</strong>: Promenade paisible au Piedmont Park, le \"Central Park\" d'Atlanta, avec ses vues sur les gratte-ciel.",
+        "<strong>🌸</strong>: Visite des Atlanta Botanical Garden, un havre de paix luxuriant en plein cœur de la ville.",
+        "<strong>🛍️</strong>: Exploration du Ponce City Market, un ancien bâtiment Sears transformé en marché gastronomique et commercial."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Piedmont Park, Atlanta",
+          "categorie": "Parc",
+          "coords": { "lat": 33.7854, "lng": -84.3746 }
+        },
+        {
+          "nom_recherche": "Atlanta Botanical Garden, Atlanta",
+          "categorie": "Jardin",
+          "coords": { "lat": 33.7909, "lng": -84.3752 }
+        },
+        {
+          "nom_recherche": "Ponce City Market, Atlanta",
+          "categorie": "Marché/Shopping",
+          "coords": { "lat": 33.7749, "lng": -84.3658 }
+        }
+      ],
+      "illustration": "atlanta_park.jpg",
+      "encarts": [
+        {
+          "symbole": "🚶‍♀️",
+          "titre": "Conseil",
+          "texte": "Prévoyez des chaussures confortables pour les longues balades dans les parcs et les marchés."
+        }
+      ]
+    },
+    {
+      "jour": 3,
+      "symbole": "🥤",
+      "titre": "Histoire rafraîchissante et détente olympique",
+      "legende": "Plongez dans l'histoire d'une boisson emblématique et détendez-vous dans un parc commémoratif, avant de profiter d'une soirée gourmande.",
+      "lieu": "Atlanta",
+      "activites": [
+        "<strong>🥤</strong>: Visite du World of Coca-Cola, une expérience interactive et ludique sur l'histoire de la célèbre boisson.",
+        "<strong>🏅</strong>: Détente au Centennial Olympic Park, construit pour les Jeux Olympiques de 1996, avec ses fontaines rafraîchissantes.",
+        "<strong>🍽️</strong>: Dîner dans le quartier branché d'Inman Park, réputé pour ses restaurants innovants."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "World of Coca-Cola, Atlanta",
+          "categorie": "Musée",
+          "coords": { "lat": 33.7628, "lng": -84.3920 }
+        },
+        {
+          "nom_recherche": "Centennial Olympic Park, Atlanta",
+          "categorie": "Parc",
+          "coords": { "lat": 33.7599, "lng": -84.3920 }
+        }
+      ],
+      "illustration": "atlanta_coke.jpg",
+      "encarts": [
+        {
+          "symbole": "💡",
+          "titre": "Le saviez-vous ?",
+          "texte": "Atlanta est le berceau de Coca-Cola, inventé en 1886 par le pharmacien John Pemberton."
+        }
+      ]
+    },
+    {
+      "jour": 4,
+      "symbole": "⛰️",
+      "titre": "Cap sur les montagnes de Blue Ridge",
+      "legende": "Quittez l'effervescence d'Atlanta pour les paysages apaisants des Appalaches. Installez-vous dans un cadre naturel et profitez d'une première balade au bord de l'eau.",
+      "lieu": "Blue Ridge",
+      "activites": [
+        "<strong>🚗</strong>: Route panoramique vers Blue Ridge (environ 1h30-2h), au cœur des montagnes de Géorgie.",
+        "<strong>🏡</strong>: Installation dans un chalet ou un hôtel confortable, pour une immersion totale dans la nature.",
+        "<strong>🚶‍♂️</strong>: Balade douce le long des rives du lac Blue Ridge, idéal pour se ressourcer."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Blue Ridge, Géorgie",
+          "categorie": "Ville de montagne",
+          "coords": { "lat": 34.8654, "lng": -84.3249 }
+        },
+        {
+          "nom_recherche": "Lac Blue Ridge, Géorgie",
+          "categorie": "Lac",
+          "coords": { "lat": 34.8500, "lng": -84.2600 }
+        }
+      ],
+      "illustration": "blue_ridge_lake.jpg",
+      "encarts": [
+        {
+          "symbole": "🏞️",
+          "titre": "Paysages",
+          "texte": "Les montagnes de Géorgie offrent des vues spectaculaires et une nature préservée, parfaite pour la détente."
+        }
+      ]
+    },
+    {
+      "jour": 5,
+      "symbole": "🍎",
+      "titre": "Saveurs locales et détente montagnarde",
+      "legende": "Découvrez les produits du terroir dans une ferme emblématique et laissez-vous tenter par une après-midi de pure relaxation au cœur des Appalaches.",
+      "lieu": "Blue Ridge",
+      "activites": [
+        "<strong>🍎</strong>: Visite de Mercier Orchards, une ferme familiale proposant des produits locaux, des pâtisseries et des dégustations.",
+        "<strong>💆‍♀️</strong>: Après-midi libre pour la détente: lecture, balade légère ou pourquoi pas un soin dans un spa local (à réserver à l'avance).",
+        "<strong>🔥</strong>: Soirée cocooning au chalet, peut-être autour d'un feu de camp si l'hébergement le permet."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Mercier Orchards, Blue Ridge",
+          "categorie": "Ferme/Marché",
+          "coords": { "lat": 34.8870, "lng": -84.2880 }
+        }
+      ],
+      "illustration": "mercier_orchards.jpg",
+      "encarts": [
+        {
+          "symbole": "🧖‍♀️",
+          "titre": "Bien-être",
+          "texte": "Plusieurs établissements dans la région de Blue Ridge proposent des services de spa et de massage pour une relaxation profonde."
+        }
+      ]
+    },
+    {
+      "jour": 6,
+      "symbole": "💧",
+      "titre": "Cascades majestueuses et vignobles paisibles",
+      "legende": "Admirez la puissance de la nature avec une cascade impressionnante, puis explorez une charmante ville historique avant de savourer les vins locaux.",
+      "lieu": "Dahlonega",
+      "activites": [
+        "<strong>💧</strong>: Exploration d'Amicalola Falls State Park, avec ses sentiers doux et ses plateformes d'observation offrant des vues imprenables sur la cascade.",
+        "<strong>⛏️</strong>: Visite de Dahlonega, une ville historique de la ruée vers l'or, avec ses boutiques et son ambiance pittoresque.",
+        "<strong>🍷</strong>: Dégustation de vins dans un vignoble des North Georgia Wine Country, pour une fin de journée relaxante."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Amicalola Falls State Park, Dawsonville",
+          "categorie": "Parc d'État",
+          "coords": { "lat": 34.5575, "lng": -84.0375 }
+        },
+        {
+          "nom_recherche": "Dahlonega, Géorgie",
+          "categorie": "Ville historique",
+          "coords": { "lat": 34.5320, "lng": -83.9880 }
+        }
+      ],
+      "illustration": "amicalola_falls.jpg",
+      "encarts": [
+        {
+          "symbole": "🍇",
+          "titre": "Vignobles",
+          "texte": "La région de Dahlonega est réputée pour ses vignobles primés, offrant des dégustations dans un cadre magnifique."
+        }
+      ]
+    },
+    {
+      "jour": 7,
+      "symbole": "🛣️",
+      "titre": "Voyage vers la côte et charme du Sud",
+      "legende": "Embarquez pour un long trajet vers la côte atlantique. Après l'installation, laissez-vous séduire par la beauté intemporelle de Forsyth Park à Savannah.",
+      "lieu": "Savannah",
+      "activites": [
+        "<strong>🚗</strong>: Longue route vers Savannah (environ 4-5h), l'une des plus belles villes du Sud.",
+        "<strong>🛏️</strong>: Installation dans votre hôtel, idéalement situé dans le quartier historique.",
+        "<strong>🌳</strong>: Première balade relaxante au Forsyth Park, avec sa célèbre fontaine et ses chênes moussus."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Savannah, Géorgie",
+          "categorie": "Ville historique",
+          "coords": { "lat": 32.0835, "lng": -81.0998 }
+        },
+        {
+          "nom_recherche": "Forsyth Park, Savannah",
+          "categorie": "Parc",
+          "coords": { "lat": 32.0718, "lng": -81.0945 }
+        }
+      ],
+      "illustration": "savannah_forsyth.jpg",
+      "encarts": [
+        {
+          "symbole": "🕰️",
+          "titre": "Ambiance",
+          "texte": "Savannah est réputée pour son architecture antebellum, ses places ombragées et son atmosphère envoûtante."
+        }
+      ]
+    },
+    {
+      "jour": 8,
+      "symbole": "🏛️",
+      "titre": "Savannah historique et riveraine",
+      "legende": "Explorez les places emblématiques et l'architecture coloniale de Savannah lors d'une visite guidée douce, puis flânez le long de la rivière pour une immersion complète.",
+      "lieu": "Savannah",
+      "activites": [
+        "<strong>🚶‍♀️</strong>: Visite guidée à pied du quartier historique de Savannah, pour découvrir ses places, ses maisons coloniales et son histoire.",
+        "<strong>🚢</strong>: Promenade le long de River Street, avec ses boutiques, ses galeries et ses vues sur les bateaux qui passent.",
+        "<strong>👻</strong>: Soirée \"Ghost Tour\" (visite des fantômes), une manière ludique et non sportive de découvrir les légendes de la ville."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Quartier historique de Savannah, Savannah",
+          "categorie": "Quartier historique",
+          "coords": { "lat": 32.0808, "lng": -81.0920 }
+        },
+        {
+          "nom_recherche": "River Street, Savannah",
+          "categorie": "Rue commerçante",
+          "coords": { "lat": 32.0837, "lng": -81.0900 }
+        }
+      ],
+      "illustration": "savannah_river_street.jpg",
+      "encarts": [
+        {
+          "symbole": "📚",
+          "titre": "Culture",
+          "texte": "Savannah est souvent citée comme l'une des villes les plus hantées des États-Unis, d'où la popularité des visites sur le thème des fantômes."
+        }
+      ]
+    },
+    {
+      "jour": 9,
+      "symbole": "🖼️",
+      "titre": "Art, histoire et sérénité",
+      "legende": "Découvrez l'art et l'architecture de Savannah à travers ses musées, puis trouvez la paix dans un cimetière historique d'une beauté saisissante.",
+      "lieu": "Savannah",
+      "activites": [
+        "<strong>🖼️</strong>: Visite du Telfair Museums (Jepson Center for the Arts ou Owens-Thomas House & Slave Quarters), pour un aperçu de l'art et de l'histoire locale.",
+        "<strong>🌳</strong>: Promenade méditative au Bonaventure Cemetery, célèbre pour ses sculptures, ses chênes moussus et son ambiance paisible.",
+        "<strong>🍽️</strong>: Dîner de fruits de mer frais dans un restaurant réputé de Savannah."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Telfair Museums, Savannah",
+          "categorie": "Musée",
+          "coords": { "lat": 32.0775, "lng": -81.0930 }
+        },
+        {
+          "nom_recherche": "Bonaventure Cemetery, Savannah",
+          "categorie": "Cimetière",
+          "coords": { "lat": 32.0460, "lng": -81.0490 }
+        }
+      ],
+      "illustration": "bonaventure_cemetery.jpg",
+      "encarts": [
+        {
+          "symbole": "🎬",
+          "titre": "Anecdote",
+          "texte": "Le Bonaventure Cemetery est devenu mondialement célèbre grâce au livre \"Minuit dans le jardin du bien et du mal\" et son adaptation cinématographique."
+        }
+      ]
+    },
+    {
+      "jour": 10,
+      "symbole": "🏖️",
+      "titre": "Évasion balnéaire à Tybee Island",
+      "legende": "Quittez l'agitation de la ville pour les plages de sable fin de Tybee Island. Profitez d'une journée de farniente et d'une visite emblématique.",
+      "lieu": "Tybee Island",
+      "activites": [
+        "<strong>🚗</strong>: Courte route vers Tybee Island (environ 30 min), l'île-plage de Savannah.",
+        "<strong>🏖️</strong>: Détente sur la plage, baignade ou simplement profiter du soleil et de l'air marin.",
+        "<strong>灯</strong>: Visite du Tybee Island Light Station and Museum, le plus ancien et le plus haut phare de Géorgie."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Tybee Island, Géorgie",
+          "categorie": "Île/Plage",
+          "coords": { "lat": 32.0000, "lng": -80.8500 }
+        },
+        {
+          "nom_recherche": "Tybee Island Light Station and Museum, Tybee Island",
+          "categorie": "Phare/Musée",
+          "coords": { "lat": 32.0250, "lng": -80.8440 }
+        }
+      ],
+      "illustration": "tybee_island_beach.jpg",
+      "encarts": [
+        {
+          "symbole": "☀️",
+          "titre": "Plage",
+          "texte": "Tybee Island est une destination idéale pour se détendre et profiter de l'océan Atlantique."
+        }
+      ]
+    },
+    {
+      "jour": 11,
+      "symbole": "🐬",
+      "titre": "Nature marine et ambiance insulaire",
+      "legende": "Commencez la journée par une rencontre avec la faune marine lors d'une croisière douce, puis explorez les charmes de l'île à votre rythme.",
+      "lieu": "Tybee Island",
+      "activites": [
+        "<strong>🐬</strong>: Croisière d'observation des dauphins (optionnel, très relaxant) pour admirer ces mammifères marins dans leur habitat naturel.",
+        "<strong>🚶‍♀️</strong>: Balade sur les plages de l'île, à la recherche de coquillages ou simplement pour profiter du calme.",
+        "<strong>🍦</strong>: Dégustation de glaces artisanales et exploration des petites boutiques de l'île."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Tybee Island Pier and Pavilion, Tybee Island",
+          "categorie": "Jetée",
+          "coords": { "lat": 31.9960, "lng": -80.8400 }
+        }
+      ],
+      "illustration": "tybee_dolphin.jpg",
+      "encarts": [
+        {
+          "symbole": "🌊",
+          "titre": "Activité",
+          "texte": "Les croisières dauphins sont une activité douce et agréable, offrant de belles vues sur la côte et la faune marine."
+        }
+      ]
+    },
+    {
+      "jour": 12,
+      "symbole": "↩️",
+      "titre": "Retour vers Atlanta et soirée libre",
+      "legende": "Reprenez la route vers Atlanta après ces jours de détente côtière. Profitez d'une soirée libre pour vous reposer ou explorer un quartier que vous n'avez pas encore visité.",
+      "lieu": "Atlanta",
+      "activites": [
+        "<strong>🚗</strong>: Retour vers Atlanta (environ 4-5h de route).",
+        "<strong>🛏️</strong>: Installation dans un hôtel proche de l'aéroport ou dans un quartier central.",
+        "<strong>🍽️</strong>: Dîner libre et soirée de repos pour recharger les batteries avant le départ."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Atlanta, Géorgie",
+          "categorie": "Ville",
+          "coords": { "lat": 33.7490, "lng": -84.3880 }
+        }
+      ],
+      "illustration": "atlanta_skyline_night.jpg",
+      "encarts": [
+        {
+          "symbole": "⛽",
+          "titre": "Conseil",
+          "texte": "Faites le plein d'essence avant de rendre la voiture de location pour éviter des frais supplémentaires."
+        }
+      ]
+    },
+    {
+      "jour": 13,
+      "symbole": "🛍️",
+      "titre": "Derniers plaisirs et souvenirs d'Atlanta",
+      "legende": "Profitez de cette dernière journée pour quelques emplettes, une dernière balade ou la visite d'un lieu manqué, avant un dîner d'adieu mémorable.",
+      "lieu": "Atlanta",
+      "activites": [
+        "<strong>🛍️</strong>: Matinée shopping dans un centre commercial ou dans les boutiques d'un quartier comme Virginia-Highland.",
+        "<strong>🚶‍♂️</strong>: Visite du Martin Luther King Jr. National Historical Park, pour un moment de réflexion et d'histoire.",
+        "<strong>🍽️</strong>: Dîner d'adieu dans un restaurant gastronomique ou avec une vue panoramique sur la ville."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Virginia-Highland, Atlanta",
+          "categorie": "Quartier commerçant",
+          "coords": { "lat": 33.7820, "lng": -84.3600 }
+        },
+        {
+          "nom_recherche": "Martin Luther King Jr. National Historical Park, Atlanta",
+          "categorie": "Parc historique",
+          "coords": { "lat": 33.7550, "lng": -84.3730 }
+        }
+      ],
+      "illustration": "atlanta_mlk.jpg",
+      "encarts": [
+        {
+          "symbole": "🎁",
+          "titre": "Souvenirs",
+          "texte": "N'oubliez pas d'acheter quelques souvenirs de la Géorgie, comme des produits à la pêche ou des articles sur Coca-Cola."
+        }
+      ]
+    },
+    {
+      "jour": 14,
+      "symbole": "🛫",
+      "titre": "Départ d'Atlanta",
+      "legende": "C'est le moment de dire au revoir à la Géorgie. Retour à l'aéroport, restitution du véhicule et vol retour vers le Canada, la tête pleine de souvenirs.",
+      "lieu": "Atlanta",
+      "activites": [
+        "<strong>🚗</strong>: Restitution de votre voiture de location à l'aéroport.",
+        "<strong>🛫</strong>: Enregistrement et vol retour depuis l'aéroport international Hartsfield-Jackson (ATL).",
+        "<strong>👋</strong>: Départ de la Géorgie, USA."
+      ],
+      "points_interet": [
+        {
+          "nom_recherche": "Aéroport Hartsfield-Jackson, Atlanta",
+          "categorie": "Aéroport",
+          "coords": { "lat": 33.6407, "lng": -84.4277 }
+        }
+      ],
+      "illustration": "atlanta_departure.jpg",
+      "encarts": [
+        {
+          "symbole": "⏰",
+          "titre": "Conseil",
+          "texte": "Prévoyez suffisamment de temps pour le retour de la voiture et les formalités à l'aéroport, surtout en période de pointe."
+        }
+      ]
+    }
+  ],
+  "detail_budget": [
+    { "titre": "Budget vol:", "legende": "A partir de 420 €/pers", "symbole": "🛬" },
+    { "titre": "Budget transports:", "legende": "Environ 400 €/pers (location voiture + essence)", "symbole": "🚗" },
+    { "titre": "Budget repas:", "legende": "Environ 780 €/pers (50-70€/jour)", "symbole": "🥗" },
+    { "titre": "Budget logement:", "legende": "Environ 1150 €/pers (150-200€/nuit pour 2)", "symbole": "🛏️" },
+    { "titre": "Budget activités:", "legende": "Environ 390 €/pers (20-40€/jour)", "symbole": "🎭" }
+  ],
+  "periodes_ideales": [
+    { "titre": "Printemps (Avril-Mai)", "symbole": "🌸" },
+    { "titre": "Automne (Septembre-Octobre)", "symbole": "🍂" }
+  ],
+  "infos_pratiques": [
+    { "titre": "En mai, les températures en Géorgie varient entre 15 et 28°C. Prévoir des vêtements légers mais aussi une petite laine pour les soirées climatisées.", "symbole": "☀️" },
+    { "titre": "La monnaie est le dollar américain (USD). Les cartes de crédit sont largement acceptées. Prévoir un peu de liquide pour les petits commerces ou pourboires.", "symbole": "💳" },
+    { "titre": "Le permis de conduire canadien est généralement suffisant pour la location de voiture. La conduite se fait à droite, et les distances sont en miles (1 mile = 1.6 km).", "symbole": "🚗" },
+    { "titre": "Une carte SIM locale (AT&T, Verizon, T-Mobile) ou une eSIM est recommandée pour la navigation GPS et la communication. Le Wi-Fi est disponible dans la plupart des hébergements.", "symbole": "📶" },
+    { "titre": "Les pourboires sont une pratique courante et attendue aux États-Unis (15-20% dans les restaurants, pour les chauffeurs, etc.).", "symbole": "💲" }
+  ],
+  "infos_decallees": [
+    {
+      "symbole": "💡",
+      "titre": "Le saviez-vous ?",
+      "texte": "La Géorgie est surnommée le \"Peach State\" (l'État de la Pêche) bien qu'elle ne soit pas le premier producteur de pêches aux États-Unis. Ce surnom est plus lié à la qualité de ses fruits et à son image de marque."
+    },
+    {
+      "symbole": "🙃",
+      "titre": "Insolite",
+      "texte": "Atlanta est la seule ville au monde à avoir accueilli les Jeux Olympiques et à avoir été entièrement détruite par le feu (lors de la Guerre de Sécession). Elle a su renaître de ses cendres, d'où son emblème, le phénix."
+    }
+  ],
+  "specialites_culinaires": [
+    {
+      "symbole": "🍴",
+      "titre": "Shrimp and Grits",
+      "description": "Un plat réconfortant du Sud, composé de crevettes sautées servies sur un lit de grits crémeux (une sorte de bouillie de maïs)."
+    },
+    {
+      "symbole": "🍗",
+      "titre": "Fried Chicken (Poulet Frit)",
+      "description": "Le poulet frit du Sud est une institution: morceaux de poulet marinés, panés et frits à la perfection, croustillants à l'extérieur et juteux à l'intérieur."
+    },
+    {
+      "symbole": "🍰",
+      "titre": "Peach Cobbler",
+      "description": "Un dessert emblématique de la Géorgie, fait de pêches fraîches cuites avec une pâte croustillante et souvent servi chaud avec une boule de glace à la vanille."
+    }
+  ],
+  "liens_utiles": [
+    { "legende": "Vols", "titre": "Réserve ton vol", "url": "https://www.kayak.fr/flights/YUL-ATL/2026-05-15/2026-05-28", "symbole": "🛬" },
+    { "legende": "Infos officielles et inspirations", "titre": "Tourisme Géorgie (USA)", "url": "https://www.exploregeorgia.org/", "symbole": "📘" },
+    { "legende": "Location de voiture", "titre": "Kayak Location Voiture", "url": "https://www.kayak.fr/location-voiture", "symbole": "🚗" },
+    { "legende": "Météo", "titre": "Météo Géorgie (USA)", "url": "https://weather.com/weather/today/l/USGA0028:1:US", "symbole": "🌤️" }
+  ]
+}
